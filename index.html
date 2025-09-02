@@ -26,7 +26,15 @@
 </head>
 <body class="bg-[#1A1B21] text-[#FFFFFF] flex flex-col min-h-screen">
     <nav class="bg-[#1A1B21] border-[#2E313D] border-b sticky top-0 z-10">
-        <div class="max-w-5xl mx-auto p-3 flex items-center gap-7">
+        <div class="max-w-6xl mx-auto p-3 flex items-center gap-7">
+            <button id="openMenuBtn" class="hover:bg-[#2A2D39] transition-colors duration-200 p-[0.35rem] rounded-md md:hidden">
+                <svg class="size-[1.15rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 5h18"/>
+                    <path d="M3 12h18"/>
+                    <path d="M3 19h18"/>
+                </svg>
+            </button>
+
             <svg class="shrink-0" width="82.34" height="25.64" viewBox="0 0 61 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.1297 17.9962L0.863624 16.1518L0 17.0149L12.1297 18.9999L17.0996 14.0322L16.237 13.8915L12.1297 17.9962Z" fill="white"/>
                 <path d="M12.1297 14.9856L17.0996 10.0179L16.237 9.87714L12.1297 13.9805L8.10986 13.323L2.58871 12.4201L0.863624 12.1375L7.88387e-07 13.0005L1.72617 13.2819L0 15.0067L12.1297 16.9918L17.0996 12.0254L16.237 11.8847L12.1308 15.9894L6.38369 15.0478L7.24623 14.1861L12.1297 14.9856Z" fill="white"/>
@@ -38,7 +46,7 @@
 
             <div class="hidden items-center text-sm gap-1 md:flex">
                 <div class="group relative">
-                    <button class="flex items-center gap-[0.66rem] group hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
+                    <button class="flex items-center gap-[0.66rem] hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
                         <span>Products</span>
 
                         <svg class="size-[0.65rem] group-hover:rotate-[-180deg] transition-transform duration-200" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,13 +54,15 @@
                         </svg>
                     </button>
 
-                    <div class="hidden group-hover:block absolute top-12 left-0 p-3 bg-[#1A1B21] border border-[#2E313D] rounded-md">
-                        <p>dslksjaldks</p>
+                    <div class="hidden group-hover:block absolute top-full -left-9 py-2">
+                        <div class="bg-[#1A1B21] border border-[#2E313D] rounded-md w-[19rem] p-3">
+                            <a href="/">Blog</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="group relative">
-                    <button class="flex items-center gap-[0.66rem] group hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
+                    <button class="flex items-center gap-[0.66rem] hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
                         <span>Developers</span>
 
                         <svg class="size-[0.65rem] group-hover:rotate-[-180deg] transition-transform duration-200" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,13 +70,15 @@
                         </svg>
                     </button>
 
-                    <div class="hidden group-hover:block absolute top-12 left-0 p-3 bg-[#1A1B21] border border-[#2E313D] rounded-md">
-                        <p>dslksjaldks</p>
+                    <div class="hidden group-hover:block absolute top-full -left-9 py-2">
+                        <div class="bg-[#1A1B21] border border-[#2E313D] rounded-md w-[19rem] p-3">
+                            <a href="/">Blog</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="group relative">
-                    <button class="flex items-center gap-[0.66rem] group hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
+                    <button class="flex items-center gap-[0.66rem] hover:bg-[#2A2D39] transition-colors duration-200 py-[0.23rem] px-[0.74rem] rounded-md">
                         <span>Resources</span>
 
                         <svg class="size-[0.65rem] group-hover:rotate-[-180deg] transition-transform duration-200" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,8 +86,10 @@
                         </svg>
                     </button>
 
-                    <div class="hidden group-hover:block absolute top-12 left-0 p-3 bg-[#1A1B21] border border-[#2E313D] rounded-md">
-                        <p>dslksjaldks</p>
+                    <div class="hidden group-hover:block absolute top-full -left-9 py-2">
+                        <div class="bg-[#1A1B21] border border-[#2E313D] rounded-md w-[19rem] p-3">
+                            <a href="/">Blog</a>
+                        </div>
                     </div>
                 </div>
 
@@ -96,7 +110,7 @@
         </div>
     </nav>
 
-    <main class="max-w-5xl mx-auto px-3 py-9 space-y-9 flex-1 w-full">
+    <main class="max-w-6xl mx-auto px-3 py-9 space-y-9 flex-1 w-full">
         <div class="items-center space-y-9 flex flex-col sm:flex-row sm:space-y-0">
             <h1 class="text-3xl font-bold">Bricks Blog</h1>
 
@@ -156,7 +170,7 @@
     <hr class="border-[#292C37]">
 
     <footer class="px-3 py-9 space-y-9 bg-[#252832]">
-        <div class="space-y-9 items-start text-xs max-w-5xl mx-auto md:space-y-0 md:flex">
+        <div class="space-y-9 items-start text-xs max-w-6xl mx-auto md:space-y-0 md:flex">
             <div class="space-y-6">
                 <svg width="82.34" height="25.64" viewBox="0 0 61 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.1297 17.9962L0.863624 16.1518L0 17.0149L12.1297 18.9999L17.0996 14.0322L16.237 13.8915L12.1297 17.9962Z" fill="white"></path>
@@ -168,7 +182,7 @@
                 </svg>
 
                 <p>
-                    Bricks © 2025–2025
+                    Bricks © 2025
                     <a href="/" class="underline">Manage Cookies</a>.
                 </p>
             </div>
@@ -202,5 +216,54 @@
             </div>
         </div>
     </footer>
+
+    <div id="openMenuSidebar" class="z-10 fixed top-0 right-0 bg-[#1A1B21] p-3.5 min-h-screen border-l border-[#2E313D] w-[75%] transform translate-x-full duration-200">
+        <div class="space-y-12">
+            <div class="space-y-6">
+                <p>Products</p>
+
+                <div class="space-y-3">
+                    <a href="/" class="underline block">Integrations</a>
+
+                    <a href="/" class="underline block">Integrations</a>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <p>Developers</p>
+
+                <div class="space-y-3">
+                    <a href="/" class="underline block">Integrations</a>
+
+                    <a href="/" class="underline block">Integrations</a>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <p>Rerources</p>
+
+                <div class="space-y-3">
+                    <a href="/" class="underline block">Integrations</a>
+                </div>
+            </div>
+            
+            <a href="/" class="underline block">Pricing</a>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("openMenuBtn");
+        const sidebar = document.getElementById("openMenuSidebar");
+
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("translate-x-full");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!sidebar.contains(e.target) && !e.target.closest("#openMenuBtn")) {
+                sidebar.classList.add("translate-x-full");
+            }
+        });
+    </script>
 </body>
 </html>
